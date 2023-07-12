@@ -1,13 +1,10 @@
-import { Footer } from '@/components/Footer/Footer'
-import { Navbar } from '@/components/Navbar/Navbar'
-import Image from 'next/image'
+import LandingPage from '@/components/Landing/LandingPage'
 import { Fragment } from 'react'
 
 export default function Home() {
   return (
     <Fragment>
-      <Navbar />
-      <Footer />
+      <LandingPage />
     </Fragment>
   )
 }

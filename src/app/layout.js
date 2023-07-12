@@ -1,7 +1,10 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Noto_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const noto = Noto_Sans({
+  weight: ['400', '500', '700', '900',],
+  subsets: ['latin']
+});
 
 export const metadata = {
   title: 'ApiProd',
@@ -11,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={noto.className}>{children}</body>
     </html>
   )
 }

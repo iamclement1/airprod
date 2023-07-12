@@ -7,7 +7,7 @@ const Button = ({ text,
    return (
       <button {...props} 
       onClick={handleButton}
-         className='bg-[##E91313] text-white rounded-md'>
+         className='bg-[#E91313] text-white rounded-md p-4'>
             {text}
          </button>
    )

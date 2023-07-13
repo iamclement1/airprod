@@ -12,7 +12,7 @@ const About = () => {
             </p>
 
             {/* cards */}
-            <div className="lg:flex lg:space-x-44 lg:w-[70rem] md:grid grid-cols-3 gap-4 md:mx-auto p-4 lg:space-y-0 space-y-4">
+            <div className="lg:flex lg:space-x-44 lg:w-[70rem] md:grid grid-cols-3 gap-4 md:mx-auto p-4 lg:space-y-0 md:space-y-0 space-y-4">
                <div className="bg-[#F679794D]/10 border border-[#ED1B1B]/20 rounded-md p-6">
                   <Image src="/images/cloud.svg" alt="cloud-image" height={100} width={100}
                      className="mx-auto my-3" />

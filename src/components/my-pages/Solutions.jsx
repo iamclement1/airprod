@@ -4,7 +4,7 @@ import Button from '../common/Button'
 
 const Solutions = () => {
    return (
-      <main className='bg-[#180F12] w-full p-5 lg:mt-8'>
+      <main className='bg-[#180F12] w-full p-5'>
          <section className='w-full'>
             <div className="lg:flex md:space-x-12 mx-auto md:w-5/6 md:p-8 p-3">
                <Image src={"/images/groups.svg"} alt='groups-image' width={450}

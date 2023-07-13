@@ -12,7 +12,7 @@ const About = () => {
             </p>
 
             {/* cards */}
-            <div className="sm:flex md:space-x-44 sm:w-[70rem] md:mx-auto">
+            <div className="lg:flex lg:space-x-44 lg:w-[70rem] md:grid grid-cols-3 gap-4 md:mx-auto p-4 lg:space-y-0 space-y-4">
                <div className="bg-[#F679794D]/10 border border-[#ED1B1B]/20 rounded-md p-6">
                   <Image src="/images/cloud.svg" alt="cloud-image" height={100} width={100}
                      className="mx-auto my-3" />
@@ -46,7 +46,7 @@ const About = () => {
 
                </div>
             </div>
-            <p className=" sm:w-2/5 mx-auto text-center p-6 text-[#866A6A]" >
+            <p className=" lg:w-2/5 md:w-4/6 mx-auto text-center p-6 text-[#866A6A]" >
                {"Sounds intriguing?... if you’re excited about exploring the services of ApiProd, hit the button below "}
             </p>
             <div className=" flex justify-center">

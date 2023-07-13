@@ -4,13 +4,13 @@ import React, { Fragment } from "react";
 
 export const Footer = () => {
    return (
-      <footer className="bg-[#180F12] mt-12 p-4">
+      <footer className="bg-[#180F12] p-6 lg:px-8">
          <main>
-            <section className="md:flex lg:space-x-40 lg:p-2 mt-4">
+            <section className="md:flex lg:space-x-40 lg:p-2 mt-4 lg:px-8">
                <Image src={"/images/logo.svg"} alt="brand-image"
                width={100} height={300}
-               className="mx-auto" />
-               <div className="md:flex lg:space-x-40 ">
+               className="mx-auto lg:ml-12" />
+               <div className="md:flex lg:space-x-32 ">
                   <div className=" lg:ml-0 md:ml-2">
                      <h1 className="text-white md:text-2xl font-semibold sm:mt-0 mt-4">Quick Links</h1>
                      <div className=" mt-4 space-x-3 ">
@@ -86,8 +86,8 @@ export const Footer = () => {
             </section>
 
             <section>
-               <div className="mt-4 mb-4">
-            <hr className="border-top broder-white w-ful mb-4l" />
+               <div className="mt-4 mb-4 lg:px-16">
+            <hr className="border-top broder-white w-ful mb-4l " />
             <div >
                <p className="text-white flex items-center space-x-1 justify-center pb-4 pt-4 lg:text-xl">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">

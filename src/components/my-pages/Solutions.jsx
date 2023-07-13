@@ -25,7 +25,7 @@ const Solutions = () => {
             </div>
 
 
-            <div className="md:flex md:flex-row flex-row-reverse md:space-x-12 mx-auto md:w-5/6 md:p-8 p-3">
+            <div className="lg:flex md:space-x-12 mx-auto lg:w-5/6 md:p-8 p-3">
                <div className='my-4'>
                   <h1 className='italic text-white font-semibold sm:text-4xl mt-4 md:text-start text-center'>
                      A better way to grow your business
@@ -42,6 +42,17 @@ const Solutions = () => {
                   height={400}
                   className='mx-auto' />
             </div>
+
+            <div className="relative">
+               <Image src="/images/circle.svg" alt="groups-image" width={900} height={800} className="sm:mx-auto h-[24rem] w-full" />
+               <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <h1 className="text-white text-center sm:text-xl text-xs font-semibold w-[280px] p-4 ">Synergy in Action: Our Team of Innovators</h1>
+                  <p className='text-white text-center sm:w-[340px] w-[190px] md:text-[14px] text-[8px]'>
+                     {"Meet our team of innovators who are dedicated to turning ideas into reality. With diverse expertise and a collaborative approach, we create cutting-edge software solutions to empower your success. Let's unleash the potential of your business together. Contact us today."}
+                  </p>
+               </div>
+            </div>
+
          </section>
       </main>
    )

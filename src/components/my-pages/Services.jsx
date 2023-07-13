@@ -2,7 +2,7 @@ import { servicesData } from '@/utils/data';
 import Image from 'next/image';
 import React from 'react';
 
-console.log(servicesData);
+// console.log(servicesData);
 
 const Services = () => {
    return (

@@ -4,15 +4,17 @@ import { Footer } from '../common/Footer'
 import About from '../my-pages/About'
 import { Contact } from '../my-pages/Contact'
 import Solutions from '../my-pages/Solutions'
+import Newsletter from '../my-pages/Newsletter'
 
 
 const LandingPage = () => {
    return (
       <Fragment>
          <Navbar />
-         <Solutions />
-         <Contact />
          <About />
+         <Solutions />
+         {/* <Contact /> */}
+         <Newsletter />
          <Footer />
       </Fragment> 
    )

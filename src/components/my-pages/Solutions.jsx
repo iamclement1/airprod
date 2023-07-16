@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React, { Fragment } from 'react'
 import Button from '../common/Button'
+import Link from 'next/link'
 
 const Solutions = () => {
    return (
@@ -18,7 +19,9 @@ const Solutions = () => {
                      {"With a focus on customer satisfaction and results, ApiProd is dedicated to empowering businesses to achieve their full potential through custom software solutions. If you're looking to unleash the limitless potential of your business, contact us today to learn more about what we can do for you."}
                   </p>
                   <div className="lg:block flex justify-center mx-auto w-6/12 items-center">
-                     <Button text="Contact Us" />
+                     <Link href={'/contact'}>
+                        <Button text="Contact Us" />
+                     </Link>
                   </div>
 
                </div>
@@ -35,7 +38,9 @@ const Solutions = () => {
                   </p>
 
                   <div className="lg:block flex justify-center">
-                     <Button text="Learn more" />
+                     <Link href={'/contact'}>
+                        <Button text="Learn more" />
+                     </Link>
                   </div>
                </div>
                <Image src={"/images/flower.svg"} alt='groups-image' width={450}

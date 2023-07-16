@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { Fragment } from "react";
 import Button from "../common/Button";
+import Link from "next/link";
 
 const About = () => {
    return (
@@ -50,7 +51,9 @@ const About = () => {
                {"Sounds intriguing?... if you’re excited about exploring the services of ApiProd, hit the button below "}
             </p>
             <div className=" flex justify-center">
-               <Button text="Get started" />
+               <Link href={'/contact'}>
+                  <Button text="Get started" />
+               </Link>
             </div>
 
 

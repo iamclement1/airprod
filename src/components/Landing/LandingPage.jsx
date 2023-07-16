@@ -1,21 +1,22 @@
 import React, { Fragment } from 'react'
-import { Navbar } from '../common/Navbar'
 import { Footer } from '../common/Footer'
 import { About, Newsletter, Services, Solutions } from '../my-pages'
+import Hero from '../common/Hero'
 
 
 
 const LandingPage = () => {
    return (
       <Fragment>
-         <Navbar />
+         {/* <Navbar /> */}
+         <Hero />
          <About />
-         <Services/>
+         <Services />
          <Solutions />
          {/* <Contact /> */}
          <Newsletter />
          <Footer />
-      </Fragment> 
+      </Fragment>
    )
 }
 

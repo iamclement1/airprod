@@ -1,3 +1,4 @@
+import Header from '@/components/common/Header';
 import './globals.css'
 import { Noto_Sans } from 'next/font/google'
 
@@ -12,12 +13,16 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en">
       <head>
         <link rel='icon' href='/images/logo.svg' />
       </head>
-      <body className={noto.className}>{children}</body>
+      <body className={noto.className}>
+        <Header />
+        {children}</body>
     </html>
   )
 }

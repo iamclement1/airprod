@@ -29,37 +29,16 @@ export const Footer = () => {
                      </div>
                   </div>
                   <div className="flex lg:space-x-40 md:space-x-8 justify-between md:mt-0 mt-4">
-                     <div>
+                     <div className="">
                         <h1 className="text-white md:text-2xl font-semibold">Follow us</h1>
-                        <svg
-                           xmlns="http://www.w3.org/2000/svg"
-                           width="25"
-                           height="25"
-                           viewBox="0 0 25 25"
-                           fill="none"
-                           className="mt-4"
-                        >
-                           <g clip-path="url(#clip0_1553_8462)">
-                              <path
-                                 d="M0.560059 2.17287C0.560059 1.23912 1.35693 0.464111 2.34131 0.464111H22.7788C23.7632 0.464111 24.5601 1.22979 24.5601 2.17287V22.6593C24.5601 23.5931 23.7632 24.3681 22.7788 24.3681H2.34131C1.35693 24.3681 0.560059 23.6024 0.560059 22.6593V2.17287Z"
-                                 fill="#006699"
-                              />
-                              <path
-                                 d="M7.85376 20.4651V9.70825H4.26313V20.4651H7.85376ZM6.06313 8.23293C7.31001 8.23293 8.08814 7.41123 8.08814 6.37476C8.06939 5.31963 7.31001 4.5166 6.09126 4.5166C4.86313 4.5166 4.05688 5.31963 4.05688 6.3841C4.05688 7.41123 4.83501 8.24226 6.04438 8.24226H6.06313V8.23293ZM9.84126 20.4651H13.4319V14.4704C13.4319 14.1436 13.46 13.8168 13.5538 13.5927C13.8069 12.9577 14.3975 12.2854 15.3913 12.2854C16.6944 12.2854 17.21 13.2752 17.21 14.7132V20.4744H20.81V14.3116C20.81 11.0062 19.0381 9.45614 16.685 9.45614C16.0256 9.43077 15.3719 9.58739 14.7962 9.9087C14.2205 10.23 13.7451 10.7035 13.4225 11.277H13.4413V9.70825H9.84126C9.88813 10.7167 9.84126 20.4651 9.84126 20.4651Z"
-                                 fill="white"
-                              />
-                           </g>
-                           <defs>
-                              <clipPath id="clip0_1553_8462">
-                                 <rect
-                                    width="24"
-                                    height="24"
-                                    fill="white"
-                                    transform="translate(0.560059 0.416016)"
-                                 />
-                              </clipPath>
-                           </defs>
-                        </svg>
+                        <div className="flex items-center space-x-3 mt-4">
+
+                           <Image src={"images/facebook.svg"} alt="facebook_icon" width={20} height={150} />
+                           <Image src={"images/twitter.svg"} alt="facebook_icon" width={20} height={150} />
+                           <Image src={"images/linkedin.svg"} alt="linkedin" width={20} height={150} />
+                           <Image src={"images/instagram.svg"} alt="instagram idcon" width={20} height={150} />
+                        </div>
+
                      </div>
                      <div>
                         <h1 className="text-white md:text-2xl font-semibold">Contact Us</h1>

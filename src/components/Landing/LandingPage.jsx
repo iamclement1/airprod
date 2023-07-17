@@ -15,7 +15,6 @@ const LandingPage = () => {
          <Solutions />
          {/* <Contact /> */}
          <Newsletter />
-         <Footer />
       </Fragment>
    )
 }

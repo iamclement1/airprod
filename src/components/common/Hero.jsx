@@ -25,10 +25,10 @@ const Hero = () => {
                />
             </div>
             <div className="absolute lg:top-72 md:top-32 top-28 lg:mx-28 md:mx-8 mx-6">
-               <h1 className="lg:w-6/1 md:w-6/12 w-10/12 text-white lg:text-4xl md:text-2xl text-2xl font-bold ">
+               <h1 className="lg:w-6/1 md:w-6/12 w-full text-white lg:text-4xl md:text-2xl text-xl font-bold ">
                   Empowering your vision with innovative technology solutions.
                </h1>
-               <p className="text-[#BFBBBB] lg:my-8 md:my-5 my-5 md:w-6/12 w-4/6 lg:text-xl md:text-md text-xs">
+               <p className="text-[#BFBBBB] lg:my-8 md:my-5 my-3 md:w-6/12 w-4/6 lg:text-xl md:text-md text-xs">
                   {"We deliver high quality, scalable and user friendly software"}
                </p>
                <div className="flex items-center space-x-6">

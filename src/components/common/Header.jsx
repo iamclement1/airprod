@@ -26,16 +26,16 @@ const Header = () => {
 
                <div className="hidden md:block transition-all ease-in-out">
                   <div className="ml-4 flex items-center space-x-4">
-                     <Link href="#about" className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+                     <Link href="#about" className='text-gray-300 hover:border-white hover:border-b-2 px-3 py-2 text-sm font-medium'>
                         Solutions
                      </Link>
-                     <Link href="#services" className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+                     <Link href="#services" className='text-gray-300 hover:border-white hover:border-b-2 px-3 py-2 text-sm font-medium'>
                         About
                      </Link>
-                     <Link href="#services" className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+                     <Link href="/contact" className='text-gray-300 hover:border-white hover:border-b-2 px-3 py-2 text-sm font-medium'>
                         Contact Us
                      </Link>
-                     <Link href="#services" className='text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+                     <Link href="#services" className='text-gray-300 hover:border-white hover:border-b-2 px-3 py-2 text-sm font-medium'>
                         Become A Talent
                      </Link>
                   </div>
@@ -82,7 +82,7 @@ const Header = () => {
                <Link href="#services" className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
                   Services
                </Link>
-               <Link href="#services" className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+               <Link href="/contact" className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
                   Contact Us
                </Link>
                <Link href="#services" className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>

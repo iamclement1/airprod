@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const Footer = () => {
+   const currentYear = new Date().getFullYear();
    return (
       <footer className="bg-[#180F12] p-6 lg:px-8">
          <main>
@@ -81,7 +82,7 @@ export const Footer = () => {
                               </clipPath>
                            </defs>
                         </svg>
-                        <span>2023 </span><span className="text-[#E91313] font-bold">ApiProd</span>. All rights reserved.
+                        <span>{currentYear} </span><span className="text-[#E91313] font-bold">ApiProd</span>. All rights reserved.
                      </p>
                   </div>
                </div>

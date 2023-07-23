@@ -8,7 +8,7 @@ const About = () => {
       <main >
          <section id="about">
             <h1 className="text-[#E91313] text-center text-4xl font-semibold mt-12">What is ApiProd?</h1>
-            <p className="sm:w-6/12 mx-auto my-5 text-center text-[#866A6A]">
+            <p className="md:w-6/12 w-11/12 mx-auto my-5 text-center text-[#866A6A]">
                {"ApiProd helps you secure software solutions for your establishment. Enacting your ideas and guiding your breakthrough into the world of technology."}
             </p>
 

@@ -4,7 +4,7 @@ import React from 'react';
 const Newsletter = () => {
    return (
       <main className='lg:p-12 relative pb-8' >
-         <div className="absolute lg:top-4 md:bottom-24 bottom-12 lg:right-5 md:-right-24 -right-44">
+         {/* <div className="absolute lg:top-4 md:bottom-24 bottom-12 lg:right-5 md:-right-24 -right-44">
             <svg xmlns="http://www.w3.org/2000/svg" width="224" height="206" viewBox="0 0 224 206" fill="none"
                className='lg:w-full md:w-8/12 w-4/12 '>
                <ellipse cx="112.092" cy="103" rx="111.78" ry="103" fill="url(#paint0_radial_1546_8588)" fillOpacity="0.8" />
@@ -17,7 +17,7 @@ const Newsletter = () => {
                </defs>
             </svg>
 
-         </div>
+         </div> */}
          <section className="bg-[#FD8484]/5 bg-opacity-5 md:w-10/12  md:mx-auto mx-3 rounded-md border border-[#FD8484]/30 mt-8 md:p-6 p-2 relative shadow-inner">
 
             <h1 className="text-center text-[#ED1B1B] lg:text-5xl md:text-xl font-normal">

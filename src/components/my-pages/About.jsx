@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const About = () => {
    return (
-      <main id="about">
-         <section>
+      <main >
+         <section id="about">
             <h1 className="text-[#E91313] text-center text-4xl font-semibold mt-12">What is ApiProd?</h1>
             <p className="sm:w-6/12 mx-auto my-5 text-center text-[#866A6A]">
                {"ApiProd helps you secure software solutions for your establishment. Enacting your ideas and guiding your breakthrough into the world of technology."}
@@ -15,14 +15,14 @@ const About = () => {
 
             <div className="grid md:grid-cols-3 grid-cols-2 lg:gap-32 md:gap-8 gap-3 lg:w-10/12 md:w-11/12 md:mx-auto mx-4">
                {/* card1 */}
-               <div className="md:h-full h-52 bg-[#F679794D]/10 border border-[#ED1B1B]/20 rounded-md md:p-6 p-3">
+               <div className="md:h-full h-52 bg-[#F679794D]/10 border border-[#ED1B1B]/20 rounded-md md:p-6 p-3 ">
                   <Image src="/images/cloud.svg" alt="cloud-image" height={100} width={100}
                      className="mx-auto my-3 w-4/6" />
                   <p className="text-[#3d2a2a] md:text-sm text-[10px] text-center">
                      {"We handle all round software development from origin to deployment."}
                   </p>
                </div>
-
+               
                {/* card 2 */}
                <div className="flex flex-col items-center justify-center md:h-full h-52 bg-[#AEF0FE]/10 border border-[#AEF0FE] rounded-md">
                   <svg xmlns="http://www.w3.org/2000/svg" width="120" height="88" viewBox="0 0 120 88" fill="none"
@@ -36,7 +36,7 @@ const About = () => {
                </div>
 
                {/* card 3 */}
-               <div className="flex flex-col items-center justify-center md:h-full h-52 bg-[#C3C3FD]/10 border border-[#C3C3FD] rounded-md">
+               <div className="md:flex flex-col items-center justify-center md:h-full h-52 bg-[#C3C3FD]/10 border border-[#C3C3FD] rounded-md hidden ">
                   <svg xmlns="http://www.w3.org/2000/svg" width="89" height="99" viewBox="0 0 89 99" fill="none"
                      className="mx-auto">
                      <circle cx="44" cy="28" r="28" fill="#5555FF" />
@@ -46,7 +46,21 @@ const About = () => {
                      Products that meet the requirements of the owner and connect seamlessly to the end user.
                   </p>
                </div>
+               
             </div>
+            <div className="md:hidden w-6/12 flex flex-col items-center justify-center md:h-full h-52 bg-[#C3C3FD]/10 border border-[#C3C3FD] rounded-md mx-auto mt-8">
+               <svg xmlns="http://www.w3.org/2000/svg" width="89" height="99" viewBox="0 0 89 99" fill="none"
+                  className="mx-auto">
+                  <circle cx="44" cy="28" r="28" fill="#5555FF" />
+                  <path d="M-4.13537e-06 94.4865C-2.80275e-06 79.2431 29.0092 59 44.5 59C59.9908 59 89 79.2431 89 94.4865C89 109.73 59.9908 81.4748 44.5 81.4748C29.0092 81.4748 -5.46799e-06 109.73 -4.13537e-06 94.4865Z" fill="#B9B9F0" />
+               </svg>
+               <p className="text-[#3D3DEA] md:text-sm text-[10px] text-center md:mt-4 p-4">
+                  Products that meet the requirements of the owner and connect seamlessly to the end user.
+               </p>
+            </div>
+
+
+
 
             {/* cards */}
             {/* <div className="lg:flex lg:space-x-44 lg:w-[70rem] grid md:grid-cols-3 grid-cols-2 gap-4 md:mx-auto p-4 ">

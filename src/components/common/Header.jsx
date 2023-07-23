@@ -90,23 +90,23 @@ const Header = () => {
                <button onClick={() => {
                   scrollToSection('about');
                   handleMobileMenuItemClick()
-               }} className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+               }} className='block text-center text-black  px-3 py-2 rounded-md text-sm font-medium'>
                   About
                </button>
                <button onClick={() => {
                   scrollToSection('services');
                   handleClientScriptLoad()
-               }} className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+               }} className='block text-center text-black  px-3 py-2 rounded-md text-sm font-medium'>
                   Services
                </button>
                <Link href="/contact"
                   onClick={handleMobileMenuItemClick}
-                  className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+                  className='block text-center text-black px-3 py-2 rounded-md text-sm font-medium'>
                   Contact Us
                </Link>
                <Link href="/talent"
                   onClick={handleMobileMenuItemClick}
-                  className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+                  className='block text-center text-black  px-3 py-2 rounded-md text-sm font-medium'>
                   Become A Talent
                </Link>
                <div className='md:hidden block'

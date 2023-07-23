@@ -9,6 +9,9 @@ const Header = () => {
    const toggleMobileMenu = () => {
       setIsMobileMenuOpen(!isMobileMenuOpen);
    };
+   const handleMobileMenuItemClick = () => {
+      setIsMobileMenuOpen(false);
+   };
 
    const scrollToSection = (id) => {
       const element = document.getElementById(id);
@@ -23,7 +26,7 @@ const Header = () => {
                   <div className="flex-shrink-0">
                      <Link href="/">
                         <Image src={"/images/logo.svg"} alt="brand-logo" width={100}
-                           height={200} className='lg:block md:block hidden'/>
+                           height={200} className='lg:block md:block hidden' />
                         <Image src={"/images/logo-mobile.svg"} alt="brand-logo" width={120}
                            height={200} className='lg:hidden md:hidden block' />
                      </Link>
@@ -32,10 +35,12 @@ const Header = () => {
 
                <div className="hidden md:block transition-all ease-in-out">
                   <div className="ml-4 flex items-center space-x-4">
-                     <button onClick={() => scrollToSection('solution')} className='text-gray-300 hover:border-white hover:border-b-2 px-3 py-2 text-sm font-medium'>
+                     <button onClick={() => {
+                        scrollToSection('solution')
+                     }} className='text-gray-300 hover:border-white hover:border-b-2 px-3 py-2 text-sm font-medium'>
                         Solutions
                      </button>
-                     <button onClick={() => scrollToSection('about')}  className='text-gray-300 hover:border-white hover:border-b-2 px-3 py-2 text-sm font-medium'>
+                     <button onClick={() => scrollToSection('about')} className='text-gray-300 hover:border-white hover:border-b-2 px-3 py-2 text-sm font-medium'>
                         About
                      </button>
                      <Link href="/contact" className='text-gray-300 hover:border-white hover:border-b-2 px-3 py-2 text-sm font-medium'>
@@ -82,19 +87,30 @@ const Header = () => {
          {/* Mobile menu */}
          <div className={` ${isMobileMenuOpen ? 'block' : 'hidden'} md:hidden bg-white transition-all ease-in-out`}>
             <div className="flex flex-col items-center justify-center px-6 pt-2 pb-3 space-y-1 sm:px-3">
-               <button onClick={() => scrollToSection('about')} className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+               <button onClick={() => {
+                  scrollToSection('about');
+                  handleMobileMenuItemClick()
+               }} className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
                   About
                </button>
-               <button onClick={() => scrollToSection('services')} className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+               <button onClick={() => {
+                  scrollToSection('services');
+                  handleClientScriptLoad()
+               }} className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
                   Services
                </button>
-               <Link href="/contact" className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+               <Link href="/contact"
+                  onClick={handleMobileMenuItemClick}
+                  className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
                   Contact Us
                </Link>
-               <Link href="/talent" className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
+               <Link href="/talent"
+                  onClick={handleMobileMenuItemClick}
+                  className='block text-center text-black hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium'>
                   Become A Talent
                </Link>
-               <div className='md:hidden block'>
+               <div className='md:hidden block'
+                  onDoubleClick={handleMobileMenuItemClick}>
                   <Button text="Get Started" />
                </div>
             </div>

@@ -1,7 +1,14 @@
+"use client";
+import { Field, Formik } from 'formik';
 import Image from 'next/image';
 import React from 'react';
 
 const Newsletter = () => {
+
+   const subscribeHere = async (values) => {
+
+   }
+
    return (
       <main className='lg:p-12 relative pb-8 overflow-hidden' >
          <div className="absolute lg:top-4 md:bottom-24 bottom-48 lg:right-5 md:-right-24 -right-0">
@@ -43,20 +50,53 @@ const Newsletter = () => {
             <p className="text-[#977C7C] text-center lg:text-xl md:text-sm text-xs md:m-2 md:my-3 my-4">
                {"Stay up to date with our news, ideas & updates."}
             </p>
-            <form method="post" action="" className="relative lg:w-7/12 md:w-8/12 w-[80%] mx-auto">
+            <Formik initialValues={{ email: '' }}
+               validate={values => {
+                  const errors = {};
+                  if (!values.email) {
+                     errors.email = 'Required';
+                  } else if (
+                     !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+                  ) {
+                     errors.email = 'Invalid email address';
+                  }
+                  return errors;
+               }}
+               onSubmit={(values) => {
+                  subscribeHere(values);
+                  handleSubscribe
+               }}>
 
-               <div className="flex flex-row justify-between border border-[#1C1C1C] rounded-xl mx-auto">
-                  <input
-                     type="email"
-                     name="email"
-                     placeholder="Enter your email"
-                     className="w-full bg-transparent focus:outline-none md:px-8 px-6 md:placeholder:text-md placeholder:text-sm"
-                  />
-                  <button className="bg-[#1C1C1C] lg:px-6 md:px-3 m-1 rounded-md lg:text-lg md:text-md text-xs text-white p-1">
-                     Subscribe
-                  </button>
-               </div>
-            </form>
+               {({ handleSubscribe, errors, touched }) => (
+                  <form method="post" action=""
+                     onSubmit={handleSubscribe} className="relative lg:w-7/12 md:w-8/12 w-[80%] mx-auto">
+
+                     <div className="flex flex-row justify-between border border-[#1C1C1C] rounded-xl mx-auto">
+                        <Field
+                           id="email"
+                           name="email"
+                           type="text"
+                           placeholder="Enter your Email"
+                           autocomplete="off"
+                           validate={(value) => {
+                              let error;
+                              if (value.length < 1) {
+                                 error = "email is Required";
+                              }
+
+                              return error;
+                           }}
+                           className="w-full bg-transparent focus:outline-none md:px-8 px-6 md:placeholder:text-md placeholder:text-sm"
+                        />
+                        <button className="bg-[#1C1C1C] lg:px-6 md:px-3 m-1 rounded-md lg:text-lg md:text-md text-xs text-white p-1">
+                           Subscribe
+                        </button>
+                     </div>
+                     <p className='text-red-600 text-center'> {errors.email} </p>
+                  </form>
+
+               )}
+            </Formik>
 
             <div className="absolute lg:top-1/2 lg:-bottom-18 md:top-[5rem] top-[5rem] lg:left-[33px] md:left-0 left-1 transform -translate-y-1/2 md:block hidden ">
                <Image src={"/images/message.svg"} alt="message-image" width={150} height={400}

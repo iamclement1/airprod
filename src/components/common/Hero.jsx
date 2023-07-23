@@ -24,11 +24,11 @@ const Hero = () => {
                   className={`w-full lg:hidden md:hidden block `}
                />
             </div>
-            <div className="absolute lg:top-72 md:top-32 top-28 lg:mx-28 md:mx-8 mx-6">
-               <h1 className="lg:w-6/1 md:w-6/12 w-full text-white lg:text-4xl md:text-2xl text-xl font-bold ">
+            <div className="absolute xl:top-72 lg:top-64 md:top-44 top-32 xl:mx-28 md:mx-8 mx-6">
+               <h1 className="xl:w-6/1 md:w-6/12 w-full text-white lg:text-4xl md:text-2xl sm:text-xl text-md font-bold ">
                   Empowering your vision with innovative technology solutions.
                </h1>
-               <p className="text-[#BFBBBB] lg:my-8 md:my-5 my-3 md:w-6/12 w-4/6 lg:text-xl md:text-md text-xs">
+               <p className="text-[#BFBBBB] xl:my-8 md:my-5 my-3 md:w-6/12 w-4/6 lg:text-xl md:text-md text-xs">
                   {"We deliver high quality, scalable and user friendly software"}
                </p>
                <div className="flex items-center space-x-6">

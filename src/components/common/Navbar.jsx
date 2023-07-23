@@ -8,9 +8,7 @@
 // const Navbar = ({ router }) => {
 //    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-//    const toggleMobileMenu = () => {
-//       setIsMobileMenuOpen(!isMobileMenuOpen);
-//    };
+//    c  
 //    const Contact = () => {
 //       router.push('/contact');
 //    }

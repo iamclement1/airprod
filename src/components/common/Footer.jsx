@@ -1,8 +1,13 @@
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 
 export const Footer = () => {
    const currentYear = new Date().getFullYear();
+   const scrollToSection = (id) => {
+      const element = document.getElementById(id);
+      element.scrollIntoView({ behavior: 'smooth' });
+   };
    return (
       <footer className="bg-[#180F12] p-6 lg:px-8">
          <main>
@@ -17,16 +22,16 @@ export const Footer = () => {
                <div className=" ">
                   <h1 className="md:text-white text-[#DFD9D9] md:text-2xl text-xs font-semibold sm:mt-0 md:mt-4 mt-8 md:text-start text-center ">Quick Links</h1>
                   <div className="flex lg:flex-row flex-col mt-4 lg:space-x-3 md:text-start text-center">
-                     <Link href={"/"} className="md:text-[#FAD7D3] text-white cursor-pointer md:text-md text-xl md:my-0 my-1 ">
+                     <button onClick={() => scrollToSection('solution')} className="md:text-[#FAD7D3] text-white cursor-pointer md:text-md text-xl md:my-0 my-1 md:text-left">
                         Solutions
-                     </Link>
-                     <Link href={"/"} className="md:text-[#FAD7D3] text-white cursor-pointer md:text-md text-xl md:my-0 my-1 ">
+                     </button>
+                     <button onClick={() => scrollToSection('about')} className="md:text-[#FAD7D3] text-white cursor-pointer md:text-md text-xl md:my-0 my-1 md:text-left ">
                         About Us
-                     </Link>
-                     <Link href={"/"} className="md:text-[#FAD7D3] text-white cursor-pointer md:text-md text-xl md:my-0 my-1 ">
+                     </button>
+                     <Link href={"/contact"} className="md:text-[#FAD7D3] text-white cursor-pointer md:text-md text-xl md:my-0 my-1 ">
                         Contact Us
                      </Link>
-                     <Link href={"/"} className="md:text-[#FAD7D3] text-white cursor-pointer md:text-md text-xl md:my-0 my-1 ">
+                     <Link href={"/talent"} className="md:text-[#FAD7D3] text-white cursor-pointer md:text-md text-xl md:my-0 my-1 ">
                         Become A Talent
                      </Link>
                   </div>

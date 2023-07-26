@@ -7,9 +7,9 @@ const Solutions = () => {
    return (
       <main className='bg-[#180F12] w-full p-5 relative z-50'
          id='solution'>
-            <h1 className='md:hidden block text-white text-center my-4'>
+         <h1 className='md:hidden block text-white text-center my-4'>
             Insights on the product
-            </h1>
+         </h1>
          <section className='w-full'>
             <div className="lg:flex md:space-x-12 mx-auto lg:w-5/6 ">
                <Image src={"/images/groups.svg"} alt='groups-image' width={450}

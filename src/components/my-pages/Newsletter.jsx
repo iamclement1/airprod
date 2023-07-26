@@ -18,8 +18,8 @@ const Newsletter = () => {
                <defs>
                   <radialGradient id="paint0_radial_1546_8588" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(46.9148 11.1443) rotate(54.5783) scale(211.503 229.533)">
                      <stop stop-color="#E2D6D6" />
-                     <stop offset="0.543219" stop-color="#FF0000" stopOpacity="0.95" />
-                     <stop offset="1" stop-color="#F30808" stopOpacity="0.9" />
+                     <stop offset="0.543219" stopColor="#FF0000" stopOpacity="0.95" />
+                     <stop offset="1" stopColor="#F30808" stopOpacity="0.9" />
                   </radialGradient>
                </defs>
             </svg>
@@ -30,8 +30,8 @@ const Newsletter = () => {
                <defs>
                   <radialGradient id="paint0_radial_1784_7719" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.0984 4.32787) rotate(54.5783) scale(82.1372 89.139)">
                      <stop stop-color="#E2D6D6" />
-                     <stop offset="0.543219" stop-color="#FF0000" stop-opacity="0.95" />
-                     <stop offset="1" stop-color="#F30808" stop-opacity="0.9" />
+                     <stop offset="0.543219" stopColor="#FF0000" stopOpacity="0.95" />
+                     <stop offset="1" stopColor="#F30808" stopOpacity="0.9" />
                   </radialGradient>
                </defs>
             </svg>
@@ -109,12 +109,12 @@ const Newsletter = () => {
          <div className="absolute lg:left-0 lg:top-44 md:top-32 bottom-1  -z-10 ">
             <svg xmlns="http://www.w3.org/2000/svg" width="192" height="206" viewBox="0 0 192 206" fill="none"
                className='lg:w-full md:w-8/12 w-4/12 md:block hidden'>
-               <ellipse cx="80.0919" cy="103" rx="111.78" ry="103" fill="url(#paint0_radial_1609_7680)" fill-opacity="0.8" />
+               <ellipse cx="80.0919" cy="103" rx="111.78" ry="103" fill="url(#paint0_radial_1609_7680)" fillOpacity="0.8" />
                <defs>
                   <radialGradient id="paint0_radial_1609_7680" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(14.9148 11.1443) rotate(54.5783) scale(211.503 229.533)">
-                     <stop stop-color="#E2D6D6" />
-                     <stop offset="0.543219" stop-color="#FF0000" stop-opacity="0.95" />
-                     <stop offset="1" stop-color="#F30808" stop-opacity="0.9" />
+                     <stop stopColor="#E2D6D6" />
+                     <stop offset="0.543219" stopColor="#FF0000" stopOpacity="0.95" />
+                     <stop offset="1" stopColor="#F30808" stopOpacity="0.9" />
                   </radialGradient>
                </defs>
             </svg>
@@ -124,9 +124,9 @@ const Newsletter = () => {
                <ellipse cx="20.6426" cy="31" rx="33.6426" ry="31" fill="url(#paint0_radial_1784_7721)" fillOpacity="0.8" />
                <defs>
                   <radialGradient id="paint0_radial_1784_7721" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.02623 3.3541) rotate(54.5783) scale(63.6563 69.0828)">
-                     <stop stop-color="#E2D6D6" />
-                     <stop offset="0.543219" stop-color="#FF0000" stop-opacity="0.95" />
-                     <stop offset="1" stop-color="#F30808" stop-opacity="0.9" />
+                     <stop stopColor="#E2D6D6" />
+                     <stop offset="0.543219" stopColor="#FF0000" stopOpacity="0.95" />
+                     <stop offset="1" stopColor="#F30808" stopOpacity="0.9" />
                   </radialGradient>
                </defs>
             </svg>
